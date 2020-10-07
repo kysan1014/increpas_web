@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table, td {
+		border-collapse: collapse;
+		text-align: center;
+	}
+	
+	table {
+		width: 50%;
+		height: 500px;
+	}
+	
+	td {
+		width: 100%;
+		height: 15%;
+	}
+	
+	.content {
+		height: 70%;
+	}
+	
+	#Nav {
+		width: 15%;
+	}
+	
+	#Section {
+		width: 50%;
+	}
+	
+	#Aside {
+		width: 15%;
+	}
+	
+</style>
+</head>
+<body>
+
+	<table border= "1px solid black">
+<!--
+ 		<caption>HTML Layout Fromat</caption>
+ -->
+		<tr>
+			<td rowspan="3" style="width: 20%; background-color: #E0F2F1">Nav</td>
+			<td colspan="3" style="background-color: #B2DFDB">Header</td>
+		</tr>
+		<tr>
+			<td id="Nav" class="content" style="background-color: #80CBC4">Nav</td>
+			<td id="Section" class="content" style="background-color: #4DB6AC">Section</td>
+			<td id="Aside" class="content" style="background-color: #26A69A">Aside</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="background-color: #009688">Footer</td>
+		</tr>
+	</table>
+
+</body>
+</html>
