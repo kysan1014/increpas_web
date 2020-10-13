@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	font-size: 0px;
+}
+
+.content {
+	display: inline-block;
+	width: 700px;
+	height: 900px;
+}
+
+div>div {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 2px solid gray;
+	margin: 10px;
+}
+
+.d1 {
+	background: linear-gradient(180deg, red, yellow);
+}
+
+.d2 {
+	background: linear-gradient(90deg, red, yellow);
+}
+
+.d3 {
+	background: linear-gradient(135deg, red, yellow);
+}
+
+.d4 {
+	background: linear-gradient(90deg, red, yellow, green);
+}
+
+.d5 {
+	background: linear-gradient(90deg, red 10%, yellow 20%, green 70%);
+}
+
+.d6 {
+	background: linear-gradient(90deg, red 20%, yellow 50%, green 80%);
+}
+
+.d7 {
+	background: radial-gradient(circle, red, yellow);
+}
+
+.d8 {
+	background: radial-gradient(circle 60px, red, yellow);
+}
+
+.d9 {
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow);
+}
+
+.d10 {
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow 60%, green);
+}
+
+.d11 {
+	background: radial-gradient(circle farthest-corner at 120px 80px, red, yellow);
+}
+
+.d12 {
+	background: radial-gradient(circle farthest-side at 120px 80px, red, yellow);
+}

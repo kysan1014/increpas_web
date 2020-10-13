@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/day06/Test02.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<img class="img1" aria-hidden="true" src="../img/download/side02.jpeg">
+		<img class="img2" aria-hidden="false"
+			src="../img/download/side03.jpeg">
+	</div>
+
+	<div class="content">
+		<h1>display test</h1>
+		<div class="d1 color1">div1</div>
+		<div class="d1 color2" id="dn">div2-display:none</div>
+		<div class="d1 color3">div3</div>
+		<div class="d1 color4" id="dh">div4-visibility:hidden</div>
+		<div class="d1 color5">div5</div>
+	</div>
+
+	<script>
+		/*
+		var div2 = {
+			div2IsClicked : true,
+			clicked : () => {
+				if (this.div2IsClicked) {
+					$("#dn").css("display", "none");
+					this.div2IsClicked = false;
+				} else {
+					$("#dn").css("display", "block");
+					this.div2IsClicked = true;
+				}
+			}
+		};
+		var div4 = {
+			div4IsClicked : true,
+			clicked : () => {
+				if (this.div4IsClicked) {
+					$("#dh").css("visibility", "hidden");
+					this.div4IsClicked = false;
+				} else {
+					$("#dh").css("visibility", "visible");
+					this.div4IsClicked = true;
+				}
+			}
+		}
+		
+		$(".color1").click(div2.clicked);
+		$(".color3").click(div4.clicked);
+		*/
+		$(".color1").click(() => {
+			$("#dn").toggle();
+		});
+		$(".color3").click(() => {
+			$("#dh").toggle();
+		});
+		
+	</script>
+</body>
+</html>

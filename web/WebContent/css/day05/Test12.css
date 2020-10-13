@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	background-image: url("../../img/download/side03.jpeg");
+	/* background-repeat: no-repeat; */
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+h1 {
+	display: inline-block;
+	background-color: purple;
+	border: 3px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: "나눔고딕코딩";
+}

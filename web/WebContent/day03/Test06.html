@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	label {
+	display: inline-block;
+		width : 80px;
+		margin-top: 10px;
+		text-align: right;
+		padding-right: 5px;
+	}
+	input {
+		width: 200px;
+		height: 30px;
+		border: 1px solid blue;
+		
+	}
+	input[type="radio"] {
+		width: 20px;
+		height: 20px;
+		border: 1px solid blue;
+		
+	}
+	input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+		border: 1px solid blue;
+		
+	}
+</style>
+</head>
+<body>
+
+	<form method="GET" action="Test07.html">
+		<label for="id">아이디 : </label>
+		<input type="text" id="id" name="sid"><br>
+		<label for="ipw">비밀번호 :</label>
+		<input type="password" id="pw" name="pw"><br>
+		<label for="gen">성별 : </label>
+		<input type="radio" name="gen" value="M"><span>남 자</span>
+		<input type="radio" name="gen" value="F"><span>여 자</span><br>
+		<div style="width:297px; padding: 10px">
+			<label for="fav">관심사항 : </label>
+			<input type="checkbox" name="fav" value="java"><span>자바</span>
+			<input type="checkbox" name="fav" value="db"><span>데이터베이스</span>
+			<input type="checkbox" name="fav" value="html"><span>HTML</span>
+			<input type="checkbox" name="fav" value="jsp"><span>JSP</span>
+			<input type="checkbox" name="fav" value="spring"><span>스프링</span>
+			<input type="hidden" name="avt" value="11">
+		</div>
+		<label for="cars">Choose a car:</label>
+		<select name="cars" id="cars">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="mercedes">Mercedes</option>
+		  <option value="audi">Audi</option>
+		</select> <br>
+		<textarea name="body" rows="10" cols="30" style="resize: none;" placeholder="메세지 입력"></textarea><br>
+		<input id="submit" type="submit" value="submit" style="width: 297px; margin-top: 10px;"><br>
+	</form>
+	
+	<form>
+		<label for="name">이름 : </label>
+		<input type="text" id="name" name="name"><br>
+		<label for="addr">주소 : </label>
+		<input type="text" id="addr" name="addr"><br>
+		<label for="tel">전화번호 : </label>
+		<input type="text" id="tel" name="tel"><br>
+		<label for="msg">메세지 : </label>
+		<input type="text" id="msg" name="msg"><br>
+
+	</form>
+
+
+</body>
+</html>

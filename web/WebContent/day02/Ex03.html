@@ -4,52 +4,133 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+#board {
+	width: 800px;
+	height: 380px;
 
-td {
-	width: 450px;
-	height: 150px;
-	margin : 30px 30px 30px 30px;
 }
+
+#main_content, #content_list {
+	width: 380px;
+	height: 360px;
+	float: left;
+	margin: 10px 10px 10px 10px;
+
+}
+
+#content_list {
+	padding: 5px 0px 5px 0px;
+}
+
+.list_item {
+	width: 380px;
+	height: 120px;
+	overflow: hidden;
+	font-size: 12px;
+
+}
+
+#main_content_img_div {
+	width: 100%;
+	height: 60%;
+	overflow: hidden;
+}
+
+.main_content_imgs {
+	margin: 0px;
+	float: left;
+}
+
+.category {
+	margin-block-start: 0em;
+    margin-block-end: .4em;
+}
+
+strong {
+	margin-block-start: 0em;
+    margin-block-end: 1em;
+}
+
+.source {
+	margin-block-start: 0em;
+    margin-block-end: .4em;
+	color: gray;
+}
+
+.list_img {
+	width: 28%;
+	height: auto;
+	float: left;
+}
+
+.list_content {
+	width: 60%;
+	height: 100%;
+	float: left;
+	margin: 0px 5% 0px 5%;
+	padding: 20px 0px 10px 0px;
+}
+
+.category {
+	font-size: 10px;
+}
+
+#main_content_title {
+	margin-block-start: 0em;
+    margin-block-end: .4em;
+}
+
 </style>
 </head>
 <body>
 
 	<div id="board">
 
-		<div id="main_content"></div>
-
-		<div id="content_list">
-			<div class="list_item">
-				<img class="list_img">
+		<div id="main_content">
+			<div id="main_content_img_div">
+				<img class="main_content_imgs" src="../img/download/07.jpg" width=50% height=auto>
+				<img class="main_content_imgs" src="../img/download/07_right.jpg" width=50% height=auto>
 			</div>
-
-			<div class="list_item">
-				<img class="list_img">
-
-			</div>
-
-			<div class="list_item">
-				<img class="list_img">
-
+			<div style="font-size:14px;">
+				<p style="font-size:12px;">세상에 이런 일이!</p>
+				<strong id="main_content_title">위험천만! '위'대한 댕댕이가 반려인 몰래 삼킨 놀라운 것들</strong>
+				<p style="margin-bottom: 5px;">한눈파는 사이 집어삼킬지 모르는 물건들은 미리 반려견의 눈앞에서 멀리 치워야 한다. 휴지, 치킨 뼈, 껌은 아무것도...</p>
+				<p style="color: gray; margin-block-start: 0em;">레드프라이데이</p>
 			</div>
 		</div>
 
+		<div id="content_list">
+
+			<div class="list_item">
+				<img class="list_img" src="../img/download/side01.jpg">
+				<div class="list_content">
+					<p class="category">어디냥? 알려주개!</p>
+					<strong class="content_title">'반려인으로서 나는 몇 점일까?"<br>2020 서울시X동그람이 반려인 능력...</strong>
+					<p class="source">동그람이</p>
+				</div>
+			</div>
+
+			<div class="list_item">
+				<img class="list_img" src="../img/download/side02.jpeg">
+				<div class="list_content">
+					<p class="category">잔소라의 '숨은 냥이 찾기'</p>
+					<strong class="content_title">냥알못이던 그가 낙산공원 고양이의 '방석'된 사연</strong>
+					<p class="source">동그람이</p>
+				</div>
+			</div>
+
+			<div class="list_item">
+				<img class="list_img" src="../img/download/side03.jpeg">
+				<div class="list_content">
+					<p class="category">태수는 큰형님 by 도대체</p>
+					<strong class="content_title">스트릿 시정 냥이가 조명 앞을 <br> 떠나지 못하는 이유</strong>
+					<p class="source">동그람이</p>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
-
-	<table border="1px soild grey">
-
-		<tr>
-			<td rowspan="3"></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-
-	</table>
 
 </body>
 </html>

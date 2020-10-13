@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+div, p {
+	border: 3px solid darkgray;
+	clear: both;
+}
+
+.img1, .img2 {
+	float: right;
+	border: 1px solid red;
+}
+.fix {
+	height: 100px;
+	overflow: auto;
+}
+</style>
+
+</head>
+<body>
+
+	<p>이미지가 박스 영역을 벗어남</p>
+
+	<div>
+		<img class="img1" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		<img class="img1" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		<img class="img1" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		<img class="img1" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		이미지가 박스 영역을 벗어날 경우에는 overflow 속성을
+		auto로 설정하여 해결합니다.
+	</div>
+	<p>이미지가 박스 영역을 벗어날 경우에는 overflow 속성을 auto로 설정하여 해결합니다.</p>
+	<div class="fix">
+		<img class="img2" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		<img class="img2" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		<img class="img2" src="../img/avatar/noimage.jpg" alt="image" width="140" height="140"> 
+		이미지가 박스 영역을 벗어날 경우에는 overflow 속성을
+		auto로 설정하여 해결합니다.
+	</div>
+</body>
+</html>

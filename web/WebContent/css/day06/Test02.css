@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+}
+
+img.img1[aria-hidden="true"] {
+	display: none;
+}
+
+.color1 {
+	background-color: mediumslateblue;
+}
+
+.color2 {
+	background-color: mediumpurple;
+}
+
+.color3 {
+	background-color: mediumorchid;
+}
+
+.color4 {
+	background-color: magenta;
+}
+
+.color5 {
+	background-color: mediumvioletred;
+}
+
+.content {
+	display: inline-block;
+	width: 500px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+h1 {
+	background-color: indigo;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.d1 {
+	margin-top: 15px;
+	height: 30px;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#wrap {
+	padding: 100px 0px 100px 0px;
+}
+
+body {
+	font-family: 'Nanum Gothic', 'serif';
+	background-image: url("../img/signup_background.jpg");
+}
+
+#header {
+	position: absolute;
+	z-index: 10;
+}
+
+#container {
+	position: absolute;
+	z-index: 15;
+	top: 150px;
+	left:50%;
+	transform: translate(-50%, 0);
+}
+
+.background_overlay {
+	position: absolute;
+	top: 100px;
+	left:50%;
+	transform: translate(-50%, 0);
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 800px;
+	background-color: #FAFAFA;
+	opacity: 0.8;
+	z-index: 5;
+}
+
+#signup_content {
+}
+
+#signup_content {
+	margin: auto;
+	max-width: 460px;
+	width: auto;
+}
+
+.signup_title {
+	font-size: 14px;
+	margin: 20px 0px 10px 0px;
+}
+
+.row_group > span {
+	display: block;
+	width: 100%;
+	height: 27px;
+	margin: 0px;
+	border: 1px solid #BDBDBD;
+	padding: 10px 10px 10px 10px;
+}
+
+.url_addr {
+    position: absolute;
+    top: 116px;
+    right: 13px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+.input {
+	width: 100%;
+	height: 17px;
+	font-size: 15px;
+	border-width: 0px;
+}
+
+.invalid_input_msg {
+	display: none!important;
+	height: 15px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	text-align: center;
+}
+
+p {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	margin: 0px;
+}
+
+.content {
+	display: inline-block;
+	border: 1px dotted gray;
+	width: 500px;
+	height: 700px;
+	border-radius: 5px;
+}
+
+header {
+	border: 1px solid gray;
+	width: 95%;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #FFECB3;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav {
+	width: 100px;
+	height: 500px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	float: left;
+	margin: 5px;
+	margin-left: 11.5px;
+}
+
+section {
+	display: inline-block;
+	width: 250px;
+	height: 500px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin: 5px;
+	width: 250px;
+}
+
+section > div {
+	height: 70px;
+}
+
+aside {
+	width: 100px;
+	height: 500px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	float: right;
+	margin: 5px;
+	margin-right: 11.5px;
+}
+
+footer {
+	border: 1px solid gray;
+	width: 95%;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #FFECB3;
+	clear: both;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section > header, section > footer {
+	width: 95%;
+	height: 70px;
+	border: 1px solid gray;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+section > article {
+	width: 95%;
+	height: 200px;
+	border: 1px solid gray;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	background-color: #FFECB3;
+}
+</style>
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<p>&ltheader&gt</p>
+		</header>
+		<nav>
+			<p>&ltnav&gt</p>
+		</nav>
+		<section>
+			<div>
+				<p>&ltsection&gt</p>
+			</div>
+			<header>
+				<p>&ltheader&gt</p>
+			</header>
+			<article>
+				<p>&ltarticle&gt</p>
+			</article>
+			<footer>
+				<p>&ltfooter&gt</p>
+			</footer>
+		</section>
+		<aside>
+			<p>&ltaside&gt</p>
+		</aside>
+		<footer>
+			<p>&ltfooter&gt</p>
+		</footer>
+	</div>
+
+</body>
+</html>
