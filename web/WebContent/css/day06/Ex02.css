@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+nav>div {
+	width: 96%;
+	height: 500px;
+	margin-right: 10px;
+}
+
+.row1 {	
+	margin-bottom: 10px;
+}
+
+.row1>div {
+	height: 190px;
+}
+
+.row2>div {
+	height: 150px;
+}
+
+.row3 {
+	margin-top: 10px;
+}
+
+.row3>div {
+	height: 140px;
+}
+
+aside:before {
+	clear: both;
+}
+
+aside>div {
+	width: 96%;
+	height: 500px;
+	margin-left: 10px;
+}

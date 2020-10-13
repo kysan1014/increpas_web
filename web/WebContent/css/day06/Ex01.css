@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+nav > div {
+	width: 98%;
+	height: 50vh;
+	margin-right: 5px;
+}
+
+section {
+	height: 50vh;
+}
+
+.row1 {
+	height:30vh;
+}
+
+.row1 > div {
+	height: 95%;
+	margin-bottom: 10px;
+}
+
+.row2 > div {
+	height: 20vh;
+}
