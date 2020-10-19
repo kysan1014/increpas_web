@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.w3schools.com//w3css/4/w3.css">
+<style>
+	.divInner {
+		width : 90%;
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+
+	<div id="content" class="w3-content w3-center"
+		style="max-width: 600px;">
+		<h2 class="w3-col w3-green w3-card-4">구구단</h2>
+	</div>
+	
+	<script>
+		var content = document.getElementById("content");
+
+		for (var j = 2; j <= 9; j++) {
+			// Division Creation & Initialization
+			var divOuter = document.createElement('div');
+			divOuter.className = "w3-quarter";
+			var divInner = document.createElement('div');
+			divInner.className = "divInner";
+			
+			// H3 Tag for Dan Name
+			var h3 = document.createElement('h3');
+			
+			// P Tag for Printing Jth Dan
+			var p = document.createElement('p');
+			
+			// Appending Elements
+			divInner.appendChild(h3);
+			divInner.appendChild(p);
+			divOuter.appendChild(divInner);
+			content.appendChild(divOuter);
+		}
+	</script>
+
+	<script>
+		var divInners = document.getElementsByClassName('divInner');
+		console.log(divInners);
+		var len = divInners.length;
+		for (var j = 0; j < len; j++) {
+			var dan = j + 2;
+			divInners[j].firstChild.className = "w3-green w3-card-4";
+			divInners[j].firstChild.textContent = dan + "단";
+			
+			var str = "";
+			for (var gop = 1; gop <= 9; gop++) {
+				str += dan + " * " + gop + " = " + gop * dan + "<br>";
+			}
+			divInners[j].lastChild.className = "w3-card-4 w3-padding";
+			divInners[j].lastChild.innerHTML = str;
+		}
+	</script>
+
+</body>
+</html>

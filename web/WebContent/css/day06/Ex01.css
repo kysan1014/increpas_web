@@ -1,25 +1,27 @@
 @charset "UTF-8";
 
+:root {
+	--nav-h: 50vh;
+	--row1-h: 30vh;
+	--row2-h: 20vh;
+	--margin: 5px;
+}
 
 nav > div {
 	width: 98%;
-	height: 50vh;
-	margin-right: 5px;
-}
-
-section {
-	height: 50vh;
+	height: var(--nav-h);
+	margin-right: var(--margin);
 }
 
 .row1 {
-	height:30vh;
+	height:var(--row1-h);
 }
 
 .row1 > div {
 	height: 95%;
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--margin) * 2);
 }
 
 .row2 > div {
-	height: 20vh;
+	height: var(--row2-h);
 }

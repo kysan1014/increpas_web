@@ -1,37 +1,45 @@
 @charset "UTF-8";
 
-nav>div {
+:root {
+	--margin: 10px;
+	--row1-h: 190px;
+	--row2-h: 150px;
+	--row3-h: 140px;
+}
+
+nav>div, aside>div {
 	width: 96%;
-	height: 500px;
-	margin-right: 10px;
+	height: calc(var(--row1-h) + var(--row2-h) + var(--row3-h) + var(--margin) * 2);
 }
 
-.row1 {	
-	margin-bottom: 10px;
+nav>div {
+	margin-right: var(--margin);
 }
 
-.row1>div {
-	height: 190px;
-}
-
-.row2>div {
-	height: 150px;
-}
-
-.row3 {
-	margin-top: 10px;
-}
-
-.row3>div {
-	height: 140px;
+aside>div {
+	margin-left: var(--margin);
 }
 
 aside:before {
 	clear: both;
 }
 
-aside>div {
-	width: 96%;
-	height: 500px;
-	margin-left: 10px;
+.row1 {	
+	margin-bottom: var(--margin);
+}
+
+.row1>div {
+	height: var(--row1-h);
+}
+
+.row2>div {
+	height: var(--row2-h);
+}
+
+.row3 {
+	margin-top: var(--margin);
+}
+
+.row3>div {
+	height: var(--row3-h);
 }
