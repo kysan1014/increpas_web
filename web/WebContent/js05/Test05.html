@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/cls.css">
+<style>
+.box {
+	width: 500px;
+	height: 500px;
+	margin-top: 15px;
+}
+
+.ctnt {
+	width: 450px;
+	height: 450px;
+	overflow: hidden;
+}
+
+#img1 {
+	height: 450px;
+	width: auto;
+	
+}
+</style>
+</head>
+<body onload="ready();">
+
+	<div class="w3-content w3-center mw500">
+		<h1 class="w3-col w3-deep-orange w3-card-4">파일 선택기</h1>
+		<div class="w3-col">
+			<label for="f1" class="w3-col m3 w3-text-gray">
+				<h4>파일선택 :</h4>
+			</label>
+			<input type="file" id="f1" name="file" class="w3-col m9 w3-border w3-input">
+			<div class="w3-col box w3-border w3-display-container">
+				<div class="w3-display-middle w3-border ctnt">
+					<img src="../img/avatar/noimage.jpg" id="img1">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/js05/Test05.js"></script>
+
+</body>
+</html>

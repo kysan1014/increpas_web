@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/cls.css">
+</head>
+<body onload="func01()">
+
+	<form method="get" action="sample.html" id="frm" name="frm">
+		<input class="data" type="hidden" name="name" id="name">
+		<input class="data" type="hidden" name="age" id="age">
+		<input class="data" type="hidden" name="gen" id="gen">
+	</form>
+
+	<div class="w3-content w3-center mw700">
+	<!-- <form method="get" action="sample.html" id="frm" name="frm"> -->
+		<div class="w3-col w3-padding">
+			<h2 class="w3-orange w3-padding w3-card-4">회원 정보 입력</h2>
+		</div>
+		<div class="w3-col w3-padding">
+			<label for="tname" class="w3-col m2 w3-right-align">이름 : </label>
+			<input type="text" id="tname" name="tname" class="w3-col m9 w3-right w3-input w3-border" required>
+		</div>
+		<div class="w3-col w3-padding">
+			<label for="tage" class="w3-col m2 w3-right-align">나이 : </label>
+			<input type="text" id="tage" name="tage" class="w3-col m9 w3-right w3-input w3-border" required>
+		</div>
+		<div class="w3-col w3-padding">
+			<label for="tgen" class="w3-col m2 w3-right-align">성별 : </label>
+			<input type="text" id="tgen" name="tgen" class="w3-col m9 w3-right w3-input w3-border" required>
+		</div>
+		<div class="w3-col w3-padding">
+			<input type="button" id="submit" class="w3-half w3-button w3-green w3-hover-lime" value="submit">
+			<input type="button" id="cancel" class="w3-half w3-button w3-red w3-hover-deep-orange" value="cancel">
+		</div>
+		<!-- </form> -->
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/js05/Test01.js"></script>
+
+</body>
+</html>

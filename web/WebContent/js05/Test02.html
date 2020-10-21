@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/">
+</head>
+<body>
+
+	<form method="get" action="sample.html" id="frm" name="frm">
+		<input class="data" type="hidden" name="name" id="name">
+		<input class="data" type="hidden" name="age" id="age">
+		<input class="data" type="hidden" name="tel" id="tel">
+		<input class="data" type="hidden" name="mail" id="mail">
+		<input class="data" type="hidden" name="gen" id="gen">
+	</form>
+
+	<div class="w3-content w3-center mw650">
+		<h2 class="w3-deep-purple w3-padding w3-card-4 w3-padding">데이터를 sample.html로 전송</h2>
+		<div class="w3-col w3-padding w3-card-4 w3-margin-top">
+			<div class="w3-col"><h4 class="w3-text-gray">이름 : <span id="tname">이지우</span></h4></div>
+			<div class="w3-col"><h4 class="w3-text-gray">나이 : <span id="tage">26</span></h4></div>
+			<div class="w3-col"><h4 class="w3-text-gray">전화 : <span id="ttel">010-3843-4798</span></h4></div>
+			<div class="w3-col"><h4 class="w3-text-gray">메일 : <span id="tmail">jiwoo@increpas.com</span></h4></div>
+			<div class="w3-col"> 
+				<select class="w3-input w3-border" name="tgen" id="tgen">
+					<option value="" selected>성별</option>
+					<option value="M">남자</option>
+					<option value="F">여자</option>
+					<option value="O">선택하지않음</option>
+				</select>
+			</div>
+		</div>
+		<div class="w3-col w3-padding w3-card-4 w3-margin-top">
+			<div class="w3-button w3-half w3-blue" id="btn1"><h3>전송</h3></div>
+			<div class="w3-button w3-half w3-red" id="btn2"><h3>전송2</h3></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/js05/Test02.js"></script>
+
+</body>
+</html>
