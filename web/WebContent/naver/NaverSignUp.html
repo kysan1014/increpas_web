@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="./css/cls.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/06ae4e3fd3.js"></script>
+<script type="text/javascript" src="./js/NaverSignUp.js"></script>
+</head>
+<body >
+
+	<form method="get" action="#" id="frm" name="frm">
+		<input class="data" type="hidden" name="id" id="id" required>
+		<input class="data" type="hidden" name="pw" id="pw" required>
+		<input class="data" type="hidden" name="name" id="name" required>
+		<input class="data" type="hidden" name="birth" id="birth" required>
+		<input class="data" type="hidden" name="gen" id="gen" required>
+		<input class="data" type="hidden" name="tel" id="tel" required>
+		<input class="data" type="hidden" name="email" id="email">
+	</form>
+
+	<div class="w3-content w3-center mw500">
+
+			<div class="w3-col w3-padding">
+				<h2 class="w3-orange w3-padding w3-card-4">회원 정보 입력</h2>
+			</div>
+
+		<div class="w3-margin-top">
+		
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">아이디</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tid" name="tid" class="w3-col m9 w3-input w3-hover-border tdata" required>
+					<span class="w3-col m2 w3-text-gray w3-margin-top w3-margin-left">@naver.com</span>
+				</div>
+				<div id="id-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">비밀번호</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tpw" name="tpw" class="w3-col m11 w3-input w3-hover-border tdata" required>
+					<div class="w3-rest m1 w3-text-gray w3-margin-left w3-display-container" style="height:37px; width:auto;">
+						<span class="pw_security w3-display-left w3-text-gray w3-hide">안전하지</span>
+						<i class="fas fa-lock w3-xlarge w3-display-right"></i>
+					</div>
+				</div>
+				<div id="pw-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">비밀번호 확인</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tpw-confirm" name="tpw-confirm" class="w3-col m11 w3-input w3-hover-border tdata" required>
+					<div class="w3-rest m1 w3-text-gray w3-margin-left w3-display-container" style="height:37px; width:auto">
+						<span class="pw_security w3-display-left w3-text-gray w3-hide">안전하지</span>
+						<i class="fas fa-lock-open w3-xlarge w3-display-right"></i>
+					</div>
+				</div>
+				<div id="pw-confirm-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+		
+		</div>
+		
+		<div class="w3-margin-top">
+		
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">이름</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tname" name="tname" class="w3-col w3-input w3-hover-border tdata" required>
+				</div>
+				<div id="name-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom">생년월일</h6>
+				<div class="w3-col" id="tbirth">
+					<div class="w3-col">
+						<div class="w3-col m4">
+							<div class="w3-rest w3-border w3-border-gray w3-round w3-padding w3-margin-right">
+								<input type="text" id="tyear" name="tyear" class="w3-col w3-input w3-hover-border tdata" required>
+							</div>
+						</div>
+						<div class="w3-col m4">
+							<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+								<input type="text" id="tmonth" name="tmonth" class="w3-col w3-input w3-hover-border tdata" required>
+							</div>
+						</div>
+						<div class="w3-col m4">
+							<div class="w3-rest w3-border w3-border-gray w3-round w3-padding w3-margin-left">
+								<input type="text" id="tdate" name="tdate" class="w3-col w3-input w3-hover-border tdata" required>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="birth-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">성별</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tgen" name="tgen" class="w3-col w3-input w3-hover-border tdata" required>
+				</div>
+				<div id="gen-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold w3-margin-bottom-small">본인 확인 이메일<span class="w3-text-gray">(선택)</span></h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="tgen" name="tgen" class="w3-col w3-input w3-hover-border tdata" required>
+				</div>
+				<div id="gen-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+			
+		</div>
+		
+		<div class="w3-margin-top">
+		
+			<div class="w3-col w3-margin-top">
+				<h6 class="w3-col w3-left-align w3-bold">휴대전화</h6>
+				<div class="w3-col w3-border w3-border-gray w3-round w3-padding w3-margin-bottom">
+					<input type="text" id="tcountry" name="tcountry" class="w3-col w3-input w3-hover-border tdata" required>
+				</div>
+				<div class="w3-col m8 w3-border w3-border-gray w3-round w3-padding">
+					<input type="text" id="ttel" name="ttel" class="w3-col w3-input w3-hover-border tdata" required>
+				</div>
+				<div class="w3-col m4">
+					<div class="w3-rest w3-margin-left w3-round w3-padding w3-green">
+						<h6>인증번호 받기</h6>
+					</div>
+				</div>
+				<div class="w3-col w2-border w3-border-gray w3-round w3-padding w3-gray w3-margin-top">
+					<input type="text" id="tautho" name="tautho" class="w3-col w3-input w3-hover-border w3-gray tdata" required>
+				</div>
+				<div id="name-warning" class="w3-col w3-hide w3-text-red warning w3-left-align w3-padding-large">hh</div>
+			</div>
+		
+		</div>
+
+		<div class="w3-col blank">d</div>
+
+		<div class="w3-margin-top">
+
+			<div id="send" class="w3-col w3-padding-small w3-round w3-green w3-margin-top">
+				<h4>가입하기</h4>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

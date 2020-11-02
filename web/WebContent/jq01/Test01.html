@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/cls.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script>
+
+/*
+	$(document).ready(function() {
+		alert('Hello');
+		
+		$('h1').removeClass('w3-purple').addClass('w3-orange');
+	});
+*/
+
+	$(function() {
+		alert('Hello');
+		
+		$('h1').removeClass('w3-purple').addClass('w3-orange');
+		$('#h1').html('<h1 class="change-color">jQuery 1st 소스</h1>');
+		$('#h2').text('<h1>jQuery 2nd 소스</h1>');
+		$('#h3').addClass('change-color');
+		$('.change-color').attr('class', 'w3-amber w3-padding');
+		
+		//$('#ctnt').children().first().html('제이쿼리 첫번째 소스');
+		$('#ctnt > h1:first').removeClass('w3-orange').addClass('w3-red');
+		//$('#ctnt > h1:first').prev().text('진짜 첫번째 JQuery Test');
+		$('#ctnt > h1:first').prev().children().first().text('진짜 첫번째 JQuery Test');
+		$('#ctnt').children().last().siblings().attr('class', 'w3-deep-purple w3-padding');
+		
+		$('#ctnt').append('<div class="w3-col" id="btnbox"></div>');
+
+		$('#btnbox').append('<div class="w3-half w3-button w3-red w3-hover-orange" id="btn1">btn1</div>');
+		$('#btnbox').append('<div class="w3-half w3-button w3-blue w3-hover-teal" id="btn2">btn2</div>');
+
+
+		/* 
+		$('#btn1').click(function() {
+			alert('Hello. It\'s me.');
+		});
+ */
+/* 
+		$('.w3-button').click(function() {
+			var txt = $(this).attr('id');
+			alert('클릭된 버튼 아이디' + txt);
+		});
+  */
+
+		$('#btn2').click(function() {
+/* 
+			$('#btnbox').siblings().eq(2).attr('class', 'w3-khaki w3-padding');
+			$('#btnbox').siblings().slice(3).attr('class', 'w3-yellow w3-padding');
+ */
+ 
+ 			$('#ctnt > *:gt(2)').attr('class', 'w3-khaki w3-padding');
+ 			$('#ctnt > *:lt(2)').attr('class', 'w3-yellow w3-padding');
+			
+		});
+
+		$('#btnbox').append('<div class="w3-half w3-button w3-red w3-hover-orange" id="btn3">btn3</div>');
+		$('#btnbox').append('<div class="w3-half w3-button w3-blue w3-hover-teal" id="btn4">btn4</div>');
+
+		$('#btn3').click(function() {
+			$(location).attr('href', '../js05/sample.html?name=이지우&id=jiwoo&mail=jiwoo@increpas.com&tel=010-1234-5678&age=26&gen=남자')
+		})
+  
+		$('#btn4').click(function() {
+			$('body').prepend('<form method="get" action="../js05/sample.html" id="frm"></form>');
+			$('#frm').append('<input type="hidden" name="name" value="이지우">');
+			$('#frm').append('<input type="hidden" name="age" value="26">');
+			$('#frm').append('<input type="hidden" name="tel" value="010-1234-5678">');
+			$('#frm').append('<input type="hidden" name="mail" value="jiwoo@increpas.com">');
+			$('#frm').append('<input type="hidden" name="gen" value="남자">');
+			$('#frm').submit();
+		});
+		
+
+		$('#btnbox').append('<div class="w3-half w3-button w3-red w3-hover-orange" id="btn5">btn5</div>');
+		$('#btnbox').append('<div class="w3-half w3-button w3-blue w3-hover-teal" id="btn6">btn6</div>');
+
+		$('#btn5').click(function() {
+			$('#name1').val('이지우');
+			$('#age1').val('26');
+			$('#tel1').val('010-1234-5678');
+			$('#mail1').val('jiwoo@increpas.com');
+			$('#gen1').val('남자');
+			
+			$('#frm1').submit();
+		});
+		
+	});
+
+</script>
+<body>
+
+	<form method="get" action="../js05/sample.html" id="frm1">
+		<input type="hidden" id="name1" name="name">
+		<input type="hidden" id="age1" name="age">
+		<input type="hidden" id="tel1" name="tel">
+		<input type="hidden" id="mail1" name="mail">
+		<input type="hidden" id="gen1" name="gen">
+	</form>
+
+	<div class="w3-content w3-center mw600" id="ctnt">
+		<div class="w3-purple w3-padding" id="h1">jQuery 1번째 소스</div>
+		<h1 class="w3-purple w3-padding" id="h2">jQuery 2번째 소스</h1>
+		<h1 class="w3-purple w3-padding" id="h3">jQuery 3번째 소스</h1>
+		<h1 class="w3-purple w3-padding" id="h4">jQuery 4번째 소스</h1>
+		<h1 class="w3-purple w3-padding" id="h5">jQuery 5번째 소스</h1>
+		<h1 class="w3-purple w3-padding" id="h6">jQuery 6번째 소스</h1>
+	</div>
+
+</body>
+</html>

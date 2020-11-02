@@ -34,4 +34,11 @@ function func01() {
 			el[i].value = '';
 		}
 	}
+	
+	
+	var style = new Array();
+	style = document.getElementById('tage').style.cssText;
+	style.forEach((prop, val) => {		
+		document.body.append(prop + ' : ' + val);
+	});
 }
