@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com//w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://pomax.github.io/bezierjs/bezier.js" type="text/javascript"></script>
+<script src="https://microsoft.github.io/maker.js/target/js/browser.maker.js" type="text/javascript"></script>
+<script src="https://danmarshall.github.io/svg-path-outline/browser/index.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/overlap.js"></script>
+</head>
+<body>
+
+<svg width="600" height="600">
+    <defs>
+        <rect id="canvas" width="100%" height="100%" fill="white" />
+        <rect id="shape1" x="100" y="100" width="40" height="70" />
+        <circle id="shape2" cx="80" cy="70" r="50" />
+        <circle id="shape3" cx="40" cy="50" r="30" />
+        <mask id="shape1-cutout">
+            <use href="#canvas"  />
+            <use href="#shape2"  />
+            <use href="#shape3"  />
+        </mask>
+        <mask id="shape2-cutout">
+            <use href="#canvas"  />
+            <use href="#shape1"  />
+            <use href="#shape3"  />
+        </mask>
+        <mask id="shape3-cutout">
+            <use href="#canvas"  />
+            <use href="#shape1"  />
+            <use href="#shape2"  />
+        </mask>
+    </defs>
+    <use href="#shape1" stroke="red" fill="none" mask="url(#shape1-cutout)" />
+    <use href="#shape2" stroke="red" fill="none" mask="url(#shape2-cutout)" />
+    <use href="#shape3" stroke="red" fill="none" mask="url(#shape3-cutout)" />
+</svg>
+
+</body>
+</html>
